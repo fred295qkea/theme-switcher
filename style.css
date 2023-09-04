@@ -1,0 +1,74 @@
+[data-theme="light"] {
+  --header-bg-color: beige;
+  --header-text-color: brown;
+  --main-bg-color: #f5f5f5;
+  --main-text-color: black;
+  --footer-bg-color: beige;
+  --footer-text-color: brown;
+  --main-border: black;
+}
+[data-theme="dark"] {
+  --header-bg-color: darkblue;
+  --header-text-color: white;
+  --main-bg-color: grey;
+  --main-text-color: white;
+  --footer-bg-color: darkblue;
+  --footer-text-color: white;
+  --main-border: white;
+}
+[data-theme="hawaii"] {
+  --header-bg-color: green;
+  --header-text-color: hotpink;
+  --main-bg-color: lightblue;
+  --main-text-color: yellow;
+  --footer-bg-color: pink;
+  --footer-text-color: red;
+  --main-border: blueviolet;
+}
+[data-theme="custom"] {
+  --header-bg-color: violet;
+  --header-text-color: white;
+  --main-bg-color: white;
+  --main-text-color: violet;
+  --footer-bg-color: violet;
+  --footer-text-color: white;
+  --main-border: violet;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--header-text-color);
+  background-color: var(--header-bg-color);
+  height: 10vh;
+}
+
+main {
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+  height: 70vh;
+  border: 2px var(--main-border) solid;
+}
+
+footer {
+  color: var(--footer-text-color);
+  background-color: var(--footer-bg-color);
+  height: 10vh;
+}
+
+.themeSelector {
+  display: flex;
+  align-content: baseline;
+  background-color: var(--header-bg-color);
+  color: var(--header-text-color);
+}
+
+select {
+  color: var(--header-text-color);
+}
